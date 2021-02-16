@@ -1,0 +1,25 @@
+﻿<Window x:Class="AlgorithmsUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlgorithmsUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="550" Background="Coral">
+    <Grid Margin="0,0,4,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Canvas HorizontalAlignment="Left" Height="140" Margin="10,10,0,0" VerticalAlignment="Top" Width="430" Background="Bisque">
+            <Button x:Name="btnAdd" Content="Add" Canvas.Left="345" Canvas.Top="111" Width="75" Click="btnAdd_Click"/>
+            <TextBox x:Name="tbAdd" Height="23" Canvas.Left="10" TextWrapping="Wrap" Text="" Canvas.Top="78" Width="335"/>
+            <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Введите массив чисел который хотите отсортировать" Canvas.Top="30" FontSize="15"/>
+            <Button x:Name="btnRnd" Content="Rnd array" Canvas.Left="265" Canvas.Top="111" Width="75" Click="btnRnd_Click"/>
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" Height="140" Margin="10,155,0,0" VerticalAlignment="Top" Width="520" Background="Bisque">
+            <Label x:Name="lbResultAfter" Content="" Canvas.Left="10" Canvas.Top="80" Height="55" Width="500" BorderThickness="10"/>
+            <Label x:Name="lbResultBefore" Content="" Canvas.Top="10" Height="55" Width="500" Canvas.Left="10" BorderThickness="10"/>
+        </Canvas>
+
+    </Grid>
+</Window>
