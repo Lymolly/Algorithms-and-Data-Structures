@@ -26,10 +26,10 @@ namespace LinkedList
                 Console.WriteLine(item);
             }
 
-            Console.WriteLine(new string('-',10));
+            Console.WriteLine(new string('-', 10));
 
             list.Remove(18);
-            
+
 
             foreach (var item in list)
             {
@@ -37,7 +37,9 @@ namespace LinkedList
             }
 
             list.Clear();
-            Console.ReadLine();
+
+
         }
+       
     }
 }
